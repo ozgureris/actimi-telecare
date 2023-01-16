@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+    padding: 15px;
+    overflow-x: hidden;
+}
+
+.left-bar{
+    height: 100vh;
+    background-color: #fbfbfb;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25%;
+    padding: 40px 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.left-bar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+h2, h3{
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h2{
+    margin: 15px 0;
+    padding: 15px 0;
+    font-weight: 500;
+}
+
+h3{
+    margin: 30px 0;
+    font-weight: 400;
+}
+
+p, strong, .right-bar li{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+strong{
+    font-weight: 500;
+}
+
+section{
+    margin-bottom: 100px;
+}
+
+.left-bar ul li{
+    padding: 10px 15px;
+}
+
+.left-bar ul li a{
+    color: #232F48;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+nav ul li.active a {
+    color: #7C92FF;
+    }
+
+.right-bar{
+    padding: 0 2% 0 30%;
+    width: 100%;
+    color: #232F48;
+}
+
+.full-size-img{
+    width: 100%;
+    margin: 30px 0;
+}
+
+.device-cards, .card-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-column-img{
+    width: 80%;
+}
+
+.card-image, .card-text{
+    width: 90%;
+    text-align: center;
+}
+
+.card-column h3{
+    margin-bottom: 10px;
+}
+
+video{
+    width: 100%;
+}
+
+.weight-wrong-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.device-cards-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
