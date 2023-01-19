@@ -25,7 +25,6 @@ function playPauseVideo() {
     });
 }
 
-// And you would kick this off where appropriate with:
 playPauseVideo();
 
 const sections = document.querySelectorAll("section");

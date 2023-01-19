@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Telecare Talimatlar</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="left-bar">
+            <ul>
+                <li class="introduction active"><a href="#">Giriş</a></li>
+                <li class="startingthetab"><a href="#startingthetab">Tabletin Başlatılması</a></li>
+                <li class="questionnaire"><a href="#questionnaire">Formun Doldurulması</a></li>
+                <li class="measuring-ecg"><a href="#measuring-ecg">EKG'nin Ölçülmesi</a></li>
+                <li class="blood-pressure"><a href="#blood-pressure">Kan Basıncının Ölçülmesi</a></li>
+                <li class="measuring-weight"><a href="#measuring-weight">Kilonun Ölçülmesi</a></li>
+            </ul>
+        </nav>
+        <div class="right-bar">
+            <section id="introduction">
+                <h2>Giriş</h2>
+                <p>Sağlık değerlerinizi günde bir kez, tercihen aynı saatte ölçün ve tabletinizdeki semptom anketini yanıtlayın. Ölçümleri uyandıktan hemen sonra yapmanızı öneririz. Bu şekilde değerler günden güne karşılaştırılabilir ve sağlık durumunuz en iyi şekilde değerlendirilebilir.</p>
+                <p>Ölçüm sonuçlarınız, veri koruma yönetmeliklerine uygun olarak tıp uzmanlarına ve ilgili doktorunuza güvenli bir şekilde iletilir.</p>
+                <p>Cihazlarınızın şarjlı olduğundan emin olun. Cihazlarınızı şarj etmek için, tabletinizi ve Kan basıncı/EKG monitörünüzü birlikte verilen şarj kablolarını kullanarak şarj edin. Lütfen tartı için yanında verilen AAA pilleri kullanın. Tartıyı kullanmadan önce arka taraftaki pil koruma kapağını çıkarın.</p> 
+                <img class="full-size-img" src="./images/devices.png" alt="actimi-devices">
+            </section>
+           <section id="startingthetab">
+                <h2>Tabletin Başlatılması</h2>
+                <img class="full-size-img" src="./images/tablet-start.png" alt="actimi-start">
+                <p>Yan taraftaki GÜÇ düğmesine kısa bir süre basarak tabletinizi AÇIN veya KAPATIN. ACTIMI Telecare Uygulaması otomatik olarak başlayacaktır. Tabletiniz çalışmazsa, şarj edildiğinden emin olun ve düğmeyi 3 saniye basılı tutun.</p> 
+                <p>Ölçümler sırasında, ölçüm değerlerinin başarılı bir şekilde aktarılması için tabletiniz Açık olmalı ve EKG monitörü ve terazi ile aynı odada bulunmalıdır.</p>
+                <p>Ölçümlerden sonra, GÜÇ düğmesine kısa bir süre basarak tabletini kapatabilirsiniz.</p>
+            </section>
+            <section id="questionnaire">
+                <h2>Formun Doldurulması</h2>
+                <video controls preload="none">
+                    <source src="./images/withoutwifinew2_Questionnaire.mp4" type="video/mp4">
+                </video>
+                <div class="device-cards-container">
+                    
+                    <ol id="questionnaire-list">
+                        <li>"Görevler" ekranında Anketi başlat butonuna dokunun.
+                            <img class="card-image" src="./images/questionnaire-start.png" alt="">
+                        </li>
+                        <li>Ardından nasıl hissettiğinize bağlı olarak Evet veya Hayır'ı seçin.
+                            <img class="card-image" src="./images/questionnaire-answer.png" alt="">
+                        </li>
+                        <li>Soruları yanıtladıktan sonra BİTİR'e tıklayın ve ilk görevinizi tamamlayın.
+                            <img class="card-image" src="./images/questionnaire-finnish.png" alt="">
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section id="measuring-ecg">
+                <div>
+                    <h2>EKG'nin Ölçülmesi</h2>
+                    <p>EKG ölçümünü yapmadan önce, hassas ölçümler elde etmek için aşağıdaki noktalara dikkat edin:</p> 
+                    <ol style="margin-bottom: 20px;">
+                    <li>EKG elektrodu doğrudan cilde karşı konumlandırılmalıdır.</li>
+                    <li>Cildiniz veya elleriniz kuruysa, ölçümden önce nemli bir bez kullanarak nemlendirin.</li>
+                    <li>EKG elektrotları kirliyse, dezenfeksiyon alkolüyle nemlendirilmiş yumuşak bir bez veya pamuklu çubuk kullanarak kiri temizleyin.</li>
+                    <li>Ölçüm yaparken, ölçüm yaptığınız elinizle vücudunuza dokunmayın.</li>
+                    <li>Lütfen sağ ve sol eliniz arasında temas olmaması gerektiğini unutmayın. Aksi takdirde ölçümler doğru şekilde alınamaz.</li>
+                    <li>Ölçüm sırasında hareketsiz kalın, konuşmayın ve cihazı sabit tutun. Her türlü hareket ölçümleri geçersiz kılacaktır.</li>
+                    <li>Ayakta dururken değil otururken ölçüm yapın.</li>
+                    </ol>
+                    <video controls preload="none" style="margin-bottom: 20px;">
+                        <source src="./images/withoutwifinew2_EKG.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id="ecg-record">
+                    <h3 style="margin-top: 20px">EKG kaydını başlatmak için</h3>
+                    <ol>
+                        <li>Düğmeye <img class="icon-move" src="./images/start-stop.png" alt=""> kısa bir süre basarak cihazı açın. Başlamıyorsa, şarj olup olmadığını kontrol edin.
+                        </li>
+                        <img src="./images/start-the-ecg.png" alt="">
+                        <li>Başlamadan önce aynı ekranı gördüğünüzden emin olun. Değilse düğmeye <img class="icon-move" src="./images/start-stop.png" alt=""> kısaca basın.
+                        </li>
+                        <img src="./images/ecg-device.png" alt="">
+                        <li>Ölçümü başlatmak için cihaz üzerindeki düğmeye <img class="icon-list" src="./images/list-icon.png"> basınız. Cihazı resimde gösterildiği gibi avucunuzun içine alın. 30 saniye bekleyin, sonuç okumaları görüntülenecektir. 
+                        </li>
+                        <img src="./images/hand-hand-ecg.png" alt="">
+                        <p>EKG kaydını tekrar başlatmak için Ana ekrana dönmek üzere <img class="icon-move" src="./images/start-stop.png" alt=""> düğmesine basın, ardından <img class="icon-list" src="./images/list-icon.png" alt=""> düğmesine basın.</p>
+                    </ol>
+                </div>
+                <div id="ecg-quality">
+                    <h3>EKG Ölçümünüzün Kalitesi</h3>
+                    <p>EKG ölçümünün kalitesi ölçüm yöntemine ve kişiye bağlı olarak değişir. Sağlık durumunuzun değerlendirilmesi için iyi bir türetme kalitesi çok önemlidir.</p>
+                    <p>EKG'nizi ölçerken cihazınızın ekranında derivasyonun kalitesini görebilirsiniz. Kalp trasesinde iyi tanımlanmış, eşit tepe noktaları arayın.</p>
+                    <div class="card-container">
+                        <div class="card">
+                            <h4>Kötü EKG ölçüm kalitesi</h4>
+                            <img src="./images/bad-ecg-quality.png" alt="">
+                        </div>
+                        <div class="card">
+                            <h4>İyi EKG ölçüm kalitesi</h4>
+                            <img src="./images/good-ecg-quality.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="measuring-methods">
+                    <h3>Ölçüm Yöntemleri</h3>
+                    <p>EKG kaydetmek için 4 yöntem vardır. "El - El" ölçüm yöntemini seçin. Kötü bir EKG derivasyon kalitesi alırsanız, aşağıdaki EKG ölçüm pozisyonlarını deneyin ve gelecekte en iyi EKG derivasyon kalitesine sahip olanı seçin.</p>
+                    <div class="card-row">
+                        <div class="card-column">
+                            <h3>El-El</h3>
+                            <img class="card-column-img" src="./images/hand-hand.png" alt="hand-hand">
+                        </div>
+                        <div class="card-column">
+                            <h3>El-Göğüs</h3>
+                            <img class="card-column-img" src="./images/hand-chest.png" alt="hand-chest">
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-column">
+                            <h3>El-Karın</h3>
+                            <img class="card-column-img" src="./images/hand-abdomen.png" alt="hand-hand">
+                        </div>
+                        <div class="card-column">
+                            <h3>Sağ El-Sol Ayak</h3>
+                            <img class="card-column-img" src="./images/hand-leg.png" alt="hand-chest">
+                        </div>  
+                    </div>       
+                </div>
+            </section>
+            <section id="blood-pressure">
+                <h2>Kan Basıncının Ölçülmesi</h2>
+                <p style="margin: 0 0 20px 0">Doğru ölçümlerin yapılmasına yardımcı olmak için bu talimatları izleyin:</p>
+                <ol style="margin-bottom: 20px">
+                    <li>Ölçüm yapmadan önce en az 5 dakika dinlenin.</li>
+                    <li>Stres kan basıncını yükseltir. Stresliyken ölçüm yapmaktan kaçının.</li>
+                    <li>Bacaklarınız açık ve ayaklarınız yerde düz olacak şekilde bir sandalyeye oturun. Kolunuzu bir masanın üzerine yerleştirin, böylece manşet kalbinizle aynı hizada olacaktır.</li>
+                    <li>Ölçüm yaparken hareketsiz kalmalı, konuşmamalı ve manşeti sıkmamalısınız.</li>
+                </ol>
+                <video controls preload="none">
+                    <source  src="./images/withoutwifinew2_Blood pressure.mp4" type="video/mp4">
+                </video>
+                <div id="start-blood">
+                    <h3>Kan Basıncı ölçümünü başlatmak için</h3>
+                    <ol>
+                        <li>Düğmeye <img class="icon-move" src="./images/start-stop.png" alt=""> kısa bir süre basarak cihazı açın. Başlamıyorsa, şarj olup olmadığını kontrol edin.</li>
+                        <img src="./images/start-the-ecg.png" alt="">
+                        <li>Başlamadan önce aynı ekranı gördüğünüzden emin olun. Değilse düğmeye <img class="icon-move" src="./images/start-stop.png" alt=""> kısaca basın.</li>
+                        <img src="./images/ecg-device.png" alt="">
+                        <li>Manşeti üst kolun etrafına, dirsek ekleminin yaklaşık 1 ila 2 cm yukarısına, resimde gösterildiği gibi sarın. Giysiler nabzın zayıf atmasına ve ölçüm hatalarına neden olabileceğinden manşeti doğrudan cilde yerleştirin.</li>
+                        <img src="./images/cuff-position.png" alt="">
+                        <li>Kan basıncı ölçümünü başlatmak için <img class="icon-move" src="./images/start-stop.png" alt=""> tuşuna basın. Monitör, ölçüm yaparken manşetin havasını otomatik olarak yavaşça indirecektir. Tipik bir ölçüm yaklaşık 30 saniye sürer.</li>
+                        <img src="./images/cuff-start.png" alt="">
+                        <li>Ölçüm tamamlandığında sonuç görüntülenecektir.</li>
+                        <p>Kan basıncı ölçümünü durdurmak için düğmeye <img class="icon-move" src="./images/start-stop.png" alt=""> tekrar basabilirsiniz.</p>
+                    </ol>
+                </div>
+                <div>
+                    <h3 style="align-self: flex-start; margin-bottom: 20px;">Ölçüm yapıldıktan sonra</h3>
+                    <p>Ölçümler tamamlandığında monitör manşetin havasını otomatik olarak indirecektir. Ölçümleri yaptıktan sonra gücü kapatmak için <img class="icon-move" src="./images/start-stop.png" alt=""> düğmesine basın. Manşeti çıkarın.</p>
+                </div>
+            </section>
+            <section id="measuring-weight">
+                <h2>Kilonun Ölçülmesi</h2>
+                <video controls preload="none">
+                    <source src="./images/withoutwifinew2_weight.mp4" type="video/mp4">
+                </video>
+                <div class="weight-wrong-right">
+                    <img style="width: 49%;" src="./images/weight-right.png" alt="">
+                    <img style="width: 49%;" src="./images/weight-wrong.png" alt="">
+                </div>
+                <ol>
+                    <li>Tartıyı sert ve düz bir yüzeye yerleştirin. Tartıyı halı veya muşamba gibi yumuşak bir yüzeyde kullanmak, tartı okumalarının doğruluğunu etkileyebilir.</li>
+                    <li>Tartım doğruluğunu sağlamak için, lütfen teraziyi uyandırmak için üzerine hafifçe basın ve terazide tartım yapmadan önce en az 10 saniye bekleyin. Terazi hareket ettirilmişse de uyandırmanız gerekir.</li>
+                    <li>Tartı ekranında ağırlığınızı görene kadar vücut tartısının üzerinde durun. Cihaz ekranındaki değer sabitlendiğinde ve yanıp sönmediğinde ölçüm tamamlanmıştır.</li>
+                </ol>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

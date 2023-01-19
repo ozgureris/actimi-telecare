@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Telecare-Unterweisung</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="left-bar">
+            <ul>
+                <li class="introduction active"><a href="#">Einführung</a></li>
+                <li class="startingthetab"><a href="#startingthetab">Starten des Tabletts</a></li>
+                <li class="questionnaire"><a href="#questionnaire">Ausfüllen des Fragebogens</a></li>
+                <li class="measuring-ecg"><a href="#measuring-ecg">EKG-Messung</a></li>
+                <li class="blood-pressure"><a href="#blood-pressure">Blutdruck Messen</a></li>
+                <li class="measuring-weight"><a href="#measuring-weight">Gewicht Messen</a></li>
+            </ul>
+        </nav>
+        <div class="right-bar">
+            <section id="introduction">
+                <h2>Einführung</h2>
+                <p>Messen Sie Ihre Gesundheitswerte einmal täglich, am besten zur gleichen Zeit, und beantworten Sie den Symptomfragebogen auf Ihrem Patienten-Tablet. Wir empfehlen, die Messungen direkt nach dem Aufstehen durchzuführen. Auf diese Weise sind die Werte von Tag zu Tag vergleichbar und Ihr Gesundheitszustand kann am besten beurteilt werden.</p>
+                <p>Ihre Messergebnisse werden sicher und datenschutzkonform an medizinisches Fachpersonal und Ihren behandelnden Arzt übermittelt.</p>
+                <p>Stellen Sie sicher, dass Ihre Geräte aufgeladen sind. Verwenden Sie zum Aufladen Ihrer Geräte die mitgelieferten Ladekabel, um Ihr Patienten-Tablet und den Blutdruck-/EKG-Monitor aufzuladen. Bitte verwenden Sie die mitgelieferten AAA-Batterien für die Waage. Entfernen Sie vor der Verwendung der Waage den Batterieschutzdeckel auf der Rückseite.</p> 
+                <img class="full-size-img" src="./images/devices.png" alt="actimi-devices">
+            </section>
+           <section id="startingthetab">
+                <h2>Starten des Tabletts</h2>
+                <img class="full-size-img" src="./images/tablet-start.png" alt="actimi-start">
+                <p>Schalten Sie Ihr Patienten-Tablet ein oder aus, indem Sie kurz auf die Ein/Aus-Taste an der Seite drücken. Die ACTIMI Telecare App wird automatisch gestartet. Wenn Ihr Patienten-Tablet nicht funktioniert, stellen Sie sicher, dass es aufgeladen ist, und halten Sie die Taste 3 Sekunden lang gedrückt.</p> 
+                <p>During measurements, the patient tablet must be switched On and in the same room as the ECG monitor and scale for successful transmission of measurement values.</p>
+                <p>After measurements, you can turn Off the patient tablet by briefly pressing the Power button.</p>
+            </section>
+            <section id="questionnaire">
+                <h2>Ausfüllen des Fragebogens</h2>
+                <video controls preload="none">
+                    <source src="./images/withoutwifinew2_Questionnaire.mp4" type="video/mp4">
+                </video>
+                <div class="device-cards-container">
+                    
+                    <ol id="questionnaire-list">
+                        <li>Tippen Sie auf die Schaltfläche "Start" des Fragebogens auf dem Bildschirm "Aufgaben".
+                            <img class="card-image" src="./images/questionnaire-start.png" alt="">
+                        </li>
+                        <li>Tippen Sie dann auf Ja oder Nein, je nachdem, wie Sie sich fühlen.
+                            <img class="card-image" src="./images/questionnaire-answer.png" alt="">
+                        </li>
+                        <li>Nachdem Sie die Fragen beantwortet haben, klicken Sie einfach auf "Fertig stellen" und schon haben Sie Ihre erste Aufgabe gelöst.
+                            <img class="card-image" src="./images/questionnaire-finnish.png" alt="">
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section id="measuring-ecg">
+                <div>
+                    <h2>EKG-Messung</h2>
+                    <p>Before using the ECG function, pay attention to the following points to obtain precise measurements:</p> 
+                    <ol style="margin-bottom: 20px;">
+                    <li>Die EKG-Elektrode sollte direkt auf der Haut positioniert werden.</li>
+                    <li>Wenn Ihre Haut oder Hände trocken sind, befeuchten Sie sie vor der Messung mit einem feuchten Tuch.</li>
+                    <li>Wenn die EKG-Elektroden verschmutzt sind, entfernen Sie den Schmutz mit einem weichen, mit Desinfektionsalkohol angefeuchteten Tuch oder Wattebausch.</li>
+                    <li>Berühren Sie während der Messung Ihren Körper nicht mit der Hand, mit der Sie die Messung vornehmen.</li>
+                    <li>Bitte beachten Sie, dass es keinen Hautkontakt zwischen Ihrer rechten und linken Hand geben darf. Andernfalls können die Messungen nicht korrekt durchgeführt werden.</li>
+                    <li>Halten Sie während der Messung still, sprechen Sie nicht und halten Sie das Gerät ruhig. Bewegungen jeglicher Art verfälschen die Messungen.</li>
+                    <li>Messen Sie im Sitzen und nicht im Stehen.</li>
+                    </ol>
+                    <video controls preload="none" style="margin-bottom: 20px;">
+                        <source src="./images/withoutwifinew2_EKG.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id="ecg-record">
+                    <h3 style="margin-top: 20px">So starten Sie eine EKG-Aufzeichnung</h3>
+                    <ol>
+                        <li>Schalten Sie das Gerät durch kurzes Drücken der Taste <img class="icon-move" src="./images/start-stop.png" alt=""> ein. Wenn es nicht startet, prüfen Sie, ob es aufgeladen ist.
+                        </li>
+                        <img src="./images/start-the-ecg.png" alt="">
+                        <li>Vergewissern Sie sich, dass Sie vor dem Start denselben Bildschirm sehen. Wenn nicht, drücken Sie kurz die <img class="icon-move" src="./images/start-stop.png" alt=""> Taste.
+                        </li>
+                        <img src="./images/ecg-device.png" alt="">
+                        <li>Drücken Sie die Taste <img class="icon-list" src="./images/list-icon.png"> am Gerät, um die Messung zu starten. Nehmen Sie das Gerät in Ihre Handflächen, wie auf dem Bild gezeigt. Warten Sie 30 Sekunden, bis die Messwerte angezeigt werden. 
+                        </li>
+                        <img src="./images/hand-hand-ecg.png" alt="">
+                        <p>
+                            Um die EKG-Aufzeichnung erneut zu starten, drücken Sie die <img class="icon-move" src="./images/start-stop.png" alt=""> Taste, um zum Startbildschirm zurückzukehren, und drücken Sie dann die <img class="icon-list" src="./images/list-icon.png" alt=""> Taste .
+                    </ol>
+                </div>
+                <div id="ecg-quality">
+                    <h3>Qualität der EKG-Messung</h3>
+                    <p>Die Qualität der EKG-Messung ist je nach Messmethode und Person unterschiedlich. Eine gute Qualität der Ableitung ist entscheidend für die Beurteilung Ihres Gesundheitszustandes.</p>
+                    <p>Sie können die Qualität der Ableitungen auf dem Display Ihres Geräts sehen, während Sie Ihr EKG messen. Achten Sie auf gut definierte, gleichmäßige Spitzenwerte in der Herzkurve.</p>
+                    <div class="card-container">
+                        <div class="card">
+                            <h4>Schlechte EKG-Messqualität</h4>
+                            <img src="./images/bad-ecg-quality.png" alt="">
+                        </div>
+                        <div class="card">
+                            <h4>Gute EKG-Messqualität</h4>
+                            <img src="./images/good-ecg-quality.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="measuring-methods">
+                    <h3>Messmethoden</h3>
+                    <p>Es gibt 4 Methoden zur EKG-Aufzeichnung. Wählen Sie die Messmethode "Hand - Hand". Wenn Sie eine schlechte EKG-Ableitungsqualität erhalten, probieren Sie die folgenden EKG-Messpositionen aus und wählen Sie in Zukunft diejenige mit der besten EKG-Ableitungsqualität.</p>
+                    <div class="card-row">
+                        <div class="card-column">
+                            <h3>Hand-Hand</h3>
+                            <img class="card-column-img" src="./images/hand-hand.png" alt="hand-hand">
+                        </div>
+                        <div class="card-column">
+                            <h3>Hand-Breast</h3>
+                            <img class="card-column-img" src="./images/hand-chest.png" alt="hand-chest">
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-column">
+                            <h3>Hand-Unterleib</h3>
+                            <img class="card-column-img" src="./images/hand-abdomen.png" alt="hand-hand">
+                        </div>
+                        <div class="card-column">
+                            <h3>Rechte Hand-linkes Bein</h3>
+                            <img class="card-column-img" src="./images/hand-leg.png" alt="hand-chest">
+                        </div>  
+                    </div>       
+                </div>
+            </section>
+            <section id="blood-pressure">
+                <h2>Blutdruck Messen</h2>
+                <p style="margin: 0 0 20px 0">Um genaue Messungen zu gewährleisten, sollten Sie die folgenden Hinweise beachten:</p>
+                <ol style="margin-bottom: 20px">
+                    <li>Ruhen Sie sich mindestens 5 Minuten aus, bevor Sie Messungen vornehmen.</li>
+                    <li>Stress erhöht den Blutdruck. Vermeiden Sie Messungen, wenn Sie gestresst sind.</li>
+                    <li>Setzen Sie sich auf einen Stuhl, schlagen Sie die Beine nicht übereinander und stellen Sie die Füße flach auf den Boden. Legen Sie Ihren Arm so auf einen Tisch, dass sich die Manschette auf Höhe Ihres Herzens befindet.</li>
+                    <li>Während der Messung sollten Sie stillhalten, nicht sprechen und die Manschette nicht zusammendrücken.</li>
+                </ol>
+                <video controls preload="none">
+                    <source  src="./images/withoutwifinew2_Blood pressure.mp4" type="video/mp4">
+                </video>
+                <div id="start-blood">
+                    <h3>So starten Sie eine Blutdruckmessung</h3>
+                    <ol>
+                        <li>Schalten Sie das Gerät durch kurzes Drücken der <img class="icon-move" src="./images/start-stop.png" alt=""> Taste ein. Wenn es nicht startet, prüfen Sie, ob es aufgeladen ist.</li>
+                        <img src="./images/start-the-ecg.png" alt="">
+                        <li>Vergewissern Sie sich, dass Sie vor dem Start denselben Bildschirm sehen. Wenn nicht, drücken Sie kurz die Taste <img class="icon-move" src="./images/start-stop.png" alt="">.</li>
+                        <img src="./images/ecg-device.png" alt="">
+                        <li>Legen Sie die Manschette um den Oberarm, etwa 1 bis 2 cm oberhalb des Ellenbogengelenks, wie in der Abbildung gezeigt. Legen Sie die Manschette direkt auf die Haut, da Kleidung einen schwachen Puls verursachen und zu Messfehlern führen kann.</li>
+                        <img src="./images/cuff-position.png" alt="">
+                        <li>Drücken Sie die <img class="icon-move" src="./images/start-stop.png" alt="">, um die Blutdruckmessung zu starten. Das Überwachungsgerät entlüftet die Manschette automatisch und langsam, während die Messungen durchgeführt werden. Eine typische Messung dauert etwa 30 Sekunden.</li>
+                        <img src="./images/cuff-start.png" alt="">
+                        <li>Die Messwerte werden angezeigt, wenn die Messung beendet ist.</li>
+                        <p>Sie können die Taste <img class="icon-move" src="./images/start-stop.png" alt=""> erneut drücken, um die Blutdruckmessung zu beenden.</p>
+                    </ol>
+                </div>
+                <div>
+                    <h3 style="align-self: flex-start; margin-bottom: 20px;">Nach der Messung</h3>
+                    <p>Das Überwachungsgerät entlüftet die Manschette automatisch, sobald die Messungen abgeschlossen sind. Drücken Sie die Taste <img class="icon-move" src="./images/start-stop.png" alt="">, um das Gerät nach der Messung auszuschalten. Nehmen Sie die Manschette ab.</p>
+                </div>
+            </section>
+            <section id="measuring-weight">
+                <h2>Gewicht Messen</h2>
+                <video controls preload="none">
+                    <source src="./images/withoutwifinew2_weight.mp4" type="video/mp4">
+                </video>
+                <div class="weight-wrong-right">
+                    <img style="width: 49%;" src="./images/weight-right.png" alt="">
+                    <img style="width: 49%;" src="./images/weight-wrong.png" alt="">
+                </div>
+                <ol>
+                    <li>Stellen Sie die Waage auf eine harte, ebene Oberfläche. Die Verwendung der Waage auf einer weichen Oberfläche wie Teppich oder Linoleum kann die Genauigkeit der Waagenanzeige beeinträchtigen.</li>
+                    <li>Um die Genauigkeit des Wiegens zu gewährleisten, treten Sie bitte vorsichtig auf die Waage, um sie aufzuwecken, und warten Sie mindestens 10 Sekunden, bevor Sie auf der Waage wiegen. Sie müssen die Waage auch aufwecken, wenn sie bewegt wurde.</li>
+                    <li>Stellen Sie sich auf die Körperwaage, bis Sie Ihr Gewicht in der Anzeige der Waage sehen können. Sobald der Wert in der Geräteanzeige feststeht und nicht blinkt, ist die Messung abgeschlossen.</li>
+                </ol>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
