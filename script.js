@@ -1,31 +1,28 @@
-function playPauseVideo() {
-    let videos = document.querySelectorAll("video");
-    videos.forEach((video) => {
-        video.muted = true;
-        let playPromise = video.play();
-        if (playPromise !== undefined) {
-            playPromise.then((_) => {
-                let observer = new IntersectionObserver(
-                    (entries) => {
-                        entries.forEach((entry) => {
-                            if (
-                                entry.intersectionRatio !== 1 &&
-                                !video.paused
-                            ) {
-								video.muted = false;
-                                video.pause();
-                            }
-                        });
-                    },
-                    { threshold: 0.2 }
-                );
-                observer.observe(video);
-            });
-        }
-    });
+var videos = document.getElementsByTagName("video"),
+fraction = 0.5;
+function checkScroll() {
+
+    for(var i = 0; i < videos.length; i++) {
+
+        var video = videos[i];
+
+        var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+            b = y + h, //bottom
+            visibleX, visibleY, visible;
+
+            visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+            visible = visibleX * visibleY / (w * h);
+
+            if (visible < fraction) {
+                video.pause();
+            }
+    }
 }
 
-playPauseVideo();
+window.addEventListener('scroll', checkScroll, false);
+window.addEventListener('resize', checkScroll, false);
 
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav ul li");
