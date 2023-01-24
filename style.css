@@ -16,6 +16,7 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    height: 100%;
   }
 
 #languages img{
@@ -26,7 +27,6 @@ body{
 .container{
     display: flex;
     padding: 15px;
-    overflow-x: hidden;
 }
 
 #startingthetab img{
